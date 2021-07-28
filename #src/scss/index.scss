@@ -1,0 +1,29 @@
+// @import "../../node_modules/normalize.css/normalize";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import "_vars";
+//========================================================================================================================================================
+.container {
+  max-width: $maxWidthContainer + px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+html {
+  height: 100%;
+}
+body {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: $fontFamily;
+  height: 100%;
+}
+//========================================================================================================================================================
+
+@import "_mixin";
+@import "_fonts";
+@import "_ui";
+@import "./components/_import";

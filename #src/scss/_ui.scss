@@ -1,0 +1,181 @@
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  img {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+// !TAB
+.tabs {
+  // .tabs__nav
+  &__nav {
+    display: flex;
+  }
+  &__body {
+  }
+
+  // .tabs__btn
+  &__btn {
+    flex: 1 1 auto;
+    border: 0;
+    background: #000;
+    color: #fff;
+    padding: 20px 0;
+    @include adaptiv-value("padding-bottom", 20, 15, 1);
+    @include adaptiv-value("padding-top", 20, 15, 1);
+    display: block;
+    cursor: pointer;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 100%;
+      height: 2px;
+      background: #ffd234;
+      transform: scale(0);
+      transition: all 0.5s ease 0s;
+    }
+    // .tabs__btn--active
+    &--active {
+      &::before {
+        transform: scale(1);
+      }
+    }
+  }
+  // .tabs__content
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+  // .tabs__item
+  &__item {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    // .tabs__item--active
+    &--active {
+      opacity: 1;
+      visibility: visible;
+      height: auto;
+      transition: all 0.3s ease 0s;
+    }
+  }
+}
+//========================================================================================================================================================
+// !MODAL
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  display: none;
+  &--open {
+    display: flex;
+  }
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 0.5);
+    z-index: 14;
+  }
+
+  &__body {
+    position: relative;
+    z-index: 15;
+    background: #fff;
+    max-width: 900px;
+    padding: 20px;
+    padding-right: 50px;
+  }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    background: skyblue;
+    border: 0;
+    padding: 0.2em 0.5em;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+}
+//========================================================================================================================================================
+//checkbox
+.checkbox {
+  padding-left: 1.2em;
+  display: block;
+  &__input {
+    position: absolute;
+    appearance: none;
+  }
+  &__box {
+    position: absolute;
+    margin-left: -1.2em;
+    width: 1em;
+    height: 1em;
+    background-image: url(../img/checkbox/default.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    &:checked + span {
+      background-image: url(../img/checkbox/checked.svg);
+    }
+  }
+}
+//========================================================================================================================================================
+.btn {
+  font-family: inherit;
+  background: $yellow;
+  border-radius: 1.5em;
+  padding: 0.9em 4.8em;
+  text-decoration: none;
+  border: 0;
+  cursor: pointer;
+  @include adaptiv-value("font-size", 18, 16, 1);
+  line-height: 23px;
+  color: $dark;
+  font-weight: 400;
+  font-style: normal;
+  transition: all 0.3s ease 0s;
+
+  @media (any-hover: hover) {
+    &:hover {
+      background: darken($yellow, 5);
+    }
+  }
+
+  &--big {
+    padding: 1.4em 7em;
+    @media (max-width: 962px) {
+      padding: 1em 5em;
+    }
+  }
+}
+//========================================================================================================================================================

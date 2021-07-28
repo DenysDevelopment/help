@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('./components/_head.html',{ title: 'home' })
+  <body>
+    <div class="wrapper">
+      @@include('./components/_header.html')
+      <main class="main">
+        <section class="intro">
+          <div class="container">
+            <div class="intro__body">
+              <h1 class="intro__title">Помощь в&nbsp;получении&nbsp;ипотеки</h1>
+              <p class="intro__description">
+                Гарантированная помощь в получении ипотеки даже с плохой
+                кредитной историей
+              </p>
+              <button class="intro__btn btn btn--big">Оставить заявку</button>
+              <div class="intro__credit credit-intro">
+                <div class="credit-intro__card">
+                  <p class="credit-intro__title">Ставка от</p>
+                  <p class="credit-intro__text">6,5%</p>
+                </div>
+                <div class="credit-intro__card">
+                  <p class="credit-intro__title">Сумма кредита от</p>
+                  <p class="credit-intro__text">50 тыс. Р</p>
+                </div>
+                <div class="credit-intro__card">
+                  <p class="credit-intro__title">Срок одобрения</p>
+                  <p class="credit-intro__text">3 дня</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="tabs-info">
+          <div class="container">
+            <div class="tabs tabs-info__tabs" data-tabs>
+              <div class="tabs__body tabs-info__body">
+                <div
+                  class="tabs__nav tabs-info__nav"
+                  role="tablist"
+                  aria-label="text"
+                >
+                  <button
+                    class="tabs__btn tabs-info__btn tabs__btn--active"
+                    data-tab-name="tabs__item--1"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="tabs-info__item--1"
+                  >
+                    Ипотека
+                  </button>
+                  <button
+                    class="tabs__btn tabs-info__btn"
+                    data-tab-name="tabs__item--2"
+                    role="tab"
+                    aria-controls="tabs-info__item--2"
+                  >
+                    Подбор квартиры
+                  </button>
+                  <button
+                    class="tabs__btn tabs-info__btn"
+                    data-tab-name="tabs__item--3"
+                    role="tab"
+                    aria-controls="tabs-info__item--3"
+                  >
+                    Страхование
+                  </button>
+                  <button
+                    class="tabs__btn tabs-info__btn"
+                    data-tab-name="tabs__item--4"
+                    role="tab"
+                    aria-controls="tabs-info__item--4"
+                  >
+                    Оценка
+                  </button>
+                </div>
+                <div class="tabs__content">
+                  <div
+                    id="tabs-info__item-1"
+                    class="
+                      tabs__item tabs__item--1
+                      tabs-info__item--1 tabs-info__item
+                      tabs__item--active
+                    "
+                    role="tabpanel"
+                  >
+                    <div class="tabs-info__content">
+                      <div class="tabs-info__column">
+                        <div class="tabs-info__text">
+                          <h3 class="tabs-info__title">Без визита в банк</h3>
+                          <p class="tabs-info__text">
+                            Оформление заявки онлайн
+                          </p>
+                          <h3 class="tabs-info__title">Скидка на страховку</h3>
+                          <p class="tabs-info__text">
+                            до 30% на объект ипотеки, которая является
+                            обязательной при получении ипотеки
+                          </p>
+                          <h3 class="tabs-info__title">Ставка от 6,5%</h3>
+                          <p class="tabs-info__text">
+                            Выгода до 500 тыс. рублей при оформлении по нашей
+                            партнерской программе
+                          </p>
+                        </div>
+                        <button class="tabs-info__button btn">Подробнее</button>
+                      </div>
+                      <div class="tabs-info__column tabs-info__img">
+                        <div class="tabs-info__images ibg">
+                          <img src="img/tabs-1.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    id="tabs-info__item-2"
+                    class="
+                      tabs__item tabs__item--2
+                      tabs-info__item--2 tabs-info__item
+                    "
+                    role="tabpanel"
+                  >
+                    <div class="tabs-info__content">
+                      <div class="tabs-info__column">
+                        <div class="tabs-info__text">
+                          <h3 class="tabs-info__title">Экономия до 70%</h3>
+                          <p class="tabs-info__text">
+                            Сэкономим ваше время и деньги
+                          </p>
+                          <h3 class="tabs-info__title">270 тысяч объектов</h3>
+
+                          <h3 class="tabs-info__title">
+                            Цены как у застройщика
+                          </h3>
+                        </div>
+                        <button class="tabs-info__button btn">Подробнее</button>
+                      </div>
+                      <div class="tabs-info__column tabs-info__img">
+                        <div class="tabs-info__images ibg">
+                          <img src="img/tabs-2.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    id="tabs-info__item-3"
+                    class="
+                      tabs__item tabs__item--3
+                      tabs-info__item--3 tabs-info__item
+                    "
+                    role="tabpanel"
+                  >
+                    <div class="tabs-info__content">
+                      <div class="tabs-info__column">
+                        <div class="tabs-info__text">
+                          <h3 class="tabs-info__title">Экономия до 70%</h3>
+                          <p class="tabs-info__text">
+                            Достигается с помощью выбора страховой компании с
+                            оптимальными условиями, а не навязанной банками
+                          </p>
+                          <h3 class="tabs-info__title">Оформим онлайн</h3>
+                          <p class="tabs-info__text">
+                            Сделаем расчет и отправим все необходимые документы
+                          </p>
+                          <h3 class="tabs-info__title">Все виды жилья</h3>
+                          <p class="tabs-info__text">
+                            Оформим страховку при приобритенияя любого вида
+                            недвижимости
+                          </p>
+                        </div>
+                        <button class="tabs-info__button btn">Подробнее</button>
+                      </div>
+                      <div class="tabs-info__column tabs-info__img">
+                        <div class="tabs-info__images ibg">
+                          <img src="img/tabs-3.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    id="tabs-info__item-4"
+                    class="
+                      tabs__item tabs__item--4
+                      tabs-info__item--4 tabs-info__item
+                    "
+                    role="tabpanel"
+                  >
+                    <div class="tabs-info__content">
+                      <div class="tabs-info__column">
+                        <div class="tabs-info__text">
+                          <h3 class="tabs-info__title">Независмые эксперты</h3>
+                          <p class="tabs-info__text">
+                            Являются третьим лицом между покупателем и продавцом
+                            и дают объективную оценку объекту
+                          </p>
+                          <h3 class="tabs-info__title">Без выезда на объект</h3>
+                          <p class="tabs-info__text">
+                            Оформляем без посещения объекта, все данные для
+                            оценки уже находятся в базе
+                          </p>
+                          <h3 class="tabs-info__title">Готовность за 1 день</h3>
+                          <p class="tabs-info__text">
+                            Отчет об оценке передоставляется в бумажном и
+                            электронном виде и сразу передается в банк
+                          </p>
+                        </div>
+                        <button class="tabs-info__button btn">Подробнее</button>
+                      </div>
+                      <div class="tabs-info__column tabs-info__img">
+                        <div class="tabs-info__images ibg">
+                          <img src="img/tabs-4.jpg" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('./components/_footer.html')
+    </div>
+    @@include('./components/_popup.html')
+    @@include('./components/_scripts.html')
+  </body>
+</html>

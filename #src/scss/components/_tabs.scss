@@ -1,0 +1,145 @@
+.tabs-info {
+  position: relative;
+  padding: 90px 0;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(../img/decor-1.svg) no-repeat top right / cover;
+    width: 100%;
+    height: 1979.5px;
+    z-index: 1;
+  }
+  &__tabs {
+    position: relative;
+    z-index: 2;
+    background: #fcfcfc;
+    box-shadow: 0px 0px 20px rgba(220, 220, 220, 0.6);
+    border-radius: 28px;
+    padding: 0 100px;
+    @include adaptiv-value("padding-left", 100, 10, 1);
+    @include adaptiv-value("padding-right", 100, 10, 1);
+    padding-bottom: 40px;
+  }
+  &__body {
+  }
+  &__nav {
+    @include adaptiv-value("margin-bottom", 50, 30, 1);
+    border-bottom: 1px solid #e0e0e0;
+
+    @media (max-width: 762px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 562px) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  &__btn {
+    background: transparent;
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 26px;
+    color: #41403f;
+    transition: all 0.3s ease 0s;
+    @media (any-hover: hover) {
+      &:hover {
+        background: lighten($yellow, 5);
+      }
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    min-height: 500px;
+    @include adaptiv-value("gap", 50, 20, 1);
+    @media (max-width: 962px) {
+      flex-direction: column-reverse;
+    }
+  }
+  &__text {
+    flex: 1;
+  }
+  &__column {
+    &:nth-child(1) {
+      display: flex;
+      flex-direction: column;
+      max-width: 300px;
+      @media (max-width: 962px) {
+        max-width: 100%;
+      }
+    }
+    &:nth-child(2) {
+      max-width: 558px;
+      @media (max-width: 962px) {
+        min-width: 100%;
+      }
+      & > div {
+        @media (max-width: 962px) {
+          min-height: 400px;
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  &__images {
+    height: 100%;
+    width: 100%;
+  }
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    @include adaptiv-value("margin-bottom", 20, 15, 1);
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 21px;
+    color: #41403f;
+    @include adaptiv-value("margin-bottom", 32, 25, 1);
+  }
+  &__button {
+  }
+  &__img {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+  }
+  &__item {
+    &--1 {
+    }
+    &--2 {
+    }
+    &--3 {
+    }
+  }
+  &__item {
+  }
+}
+.container {
+}
+.tabs {
+  &__body {
+  }
+  &__nav {
+  }
+  &__btn {
+    &--active {
+    }
+  }
+  &__content {
+  }
+  &__item {
+    &--1 {
+    }
+    &--active {
+    }
+    &--2 {
+    }
+    &--3 {
+    }
+  }
+}
