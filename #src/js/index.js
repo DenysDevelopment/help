@@ -1,5 +1,8 @@
+@@include('../../node_modules/swiper/swiper-bundle.min.js')
 @@include('tabs.js')
 @@include('dynamic.js')
+@@include('sliders.js')
+
 
 
   (function () {

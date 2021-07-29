@@ -1,0 +1,106 @@
+.benefits {
+  position: relative;
+  z-index: 2;
+  @include adaptiv-value("margin-bottom", 120, 50, 1);
+
+  &__title {
+    @include adaptiv-value("margin-bottom", 50, 30, 1);
+  }
+  &__description {
+    font-family: PTSerif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #41403f;
+    @include adaptiv-value("margin-bottom", 50, 20, 1);
+  }
+  &__body {
+    display: grid;
+    @include adaptiv-value("gap", 32, 25, 1);
+    @include adaptiv-value("margin-bottom", 102, 50, 1);
+    grid-template-columns: repeat(3, 1fr);
+    @media (max-width: 962px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 576px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  &__card {
+    position: relative;
+    counter-reset: "benefits-card";
+    counter-increment: counter-reset;
+    border: 1px solid #ffd234;
+    border-radius: 11px;
+    @include adaptiv-value("padding-top", 150, 100, 1);
+    @include adaptiv-value("padding-left", 17, 10, 1);
+    @include adaptiv-value("padding-right", 17, 10, 1);
+    @include adaptiv-value("padding-bottom", 70, 30, 1);
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    @media (any-hover: hover) {
+      &:hover {
+        &::before {
+          color: #fff;
+        }
+        background: linear-gradient(
+          190.02deg,
+          rgba(255, 210, 52, 0.7) 18.86%,
+          rgba(255, 255, 255, 0) 57.83%
+        );
+      }
+    }
+    &:nth-child(n + 10)::before {
+      content: counter(counter-reset);
+    }
+    &::before {
+      content: "0" counter(counter-reset);
+
+      position: absolute;
+      @include adaptiv-value("top", 50, 20, 1);
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: PTSerif;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 66px;
+      color: #ffd234;
+      transition: all 0.3s ease 0s;
+      @include adaptiv-value("font-size", 50, 30, 1);
+    }
+  }
+  &__text {
+  }
+
+  &__slider {
+  }
+
+  &__company {
+    border-bottom: 1px solid rgba(170, 177, 182, 0.5);
+    @include adaptiv-value("padding-bottom", 50, 20, 1);
+    @include adaptiv-value("margin-bottom", 120, 50, 1);
+  }
+
+  &__slide {
+    text-align: center;
+  }
+
+  &__label {
+    max-width: 754px;
+    background: #ffd234;
+    border-radius: 19px;
+    padding: 20px 68px;
+    @include adaptiv-value("padding-top", 20, 68, 1);
+    @include adaptiv-value("padding-right", 68, 30, 1);
+    @include adaptiv-value("padding-left", 68, 30, 1);
+    background-image: url(../img/warn.svg);
+    background-repeat: no-repeat;
+    background-position: 14px 14px;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+    margin: 0 auto;
+  }
+}

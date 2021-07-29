@@ -1,6 +1,7 @@
 .tabs-info {
   position: relative;
   padding: 90px 0;
+  @include adaptiv-value("margin-bottom", 100, 50, 1);
   &::after {
     content: "";
     position: absolute;

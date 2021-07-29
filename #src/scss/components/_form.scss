@@ -1,0 +1,75 @@
+.form-request {
+  @include adaptiv-value("margin-bottom", 161, 90, 1);
+  &__title {
+    font-family: PTSerif;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 46px;
+    text-align: center;
+    @include adaptiv-value("margin-bottom", 50, 20, 1);
+    color: #000000;
+  }
+  &__form {
+    max-width: 558px;
+    margin: 0 auto;
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
+  }
+  &__row {
+    display: block;
+    width: 100%;
+    position: relative;
+    @include adaptiv-value("margin-bottom", 38, 20, 1);
+    &:last-child {
+      @include adaptiv-value("margin-bottom", 55, 35, 1);
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+    fill: #e9be29;
+    transition: all 0.3s ease 0s;
+    @media (max-width: 768px) {
+      height: 50%;
+      left: 0px;
+    }
+  }
+  &__label {
+    position: absolute;
+    @include adaptiv-value("left", 100, 50, 1);
+    font-size: 18px;
+    line-height: 23px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #b8b4b4;
+    pointer-events: none;
+    transition: all 0.3s ease 0s;
+  }
+  &__input {
+    display: block;
+    width: 100%;
+    height: 57px;
+    background: #f8f8f8;
+    border: 0;
+    box-shadow: 0px 0px 5px 5px rgba(205, 202, 202, 0.17);
+    outline: none;
+    @include adaptiv-value("padding-left", 100, 50, 1);
+    appearance: none;
+
+    &:focus + .form-request__label {
+      top: 0;
+      font-size: 20px;
+    }
+  }
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}
