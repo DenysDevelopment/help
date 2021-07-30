@@ -38,4 +38,4 @@ new Swiper('.benefits__slider', {
   //   prevSlideMessage: 'Previous slide',
   //   nextSlideMessage: 'Next slide',
   // },
-})
+});

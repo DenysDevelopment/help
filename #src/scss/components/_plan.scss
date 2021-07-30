@@ -1,0 +1,86 @@
+.plan {
+  @include adaptiv-value("margin-bottom", 150, 50, 1);
+  &__title {
+    @include adaptiv-value("margin-bottom", 60, 20, 1);
+  }
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    @include adaptiv-value("gap", 80, 40, 1);
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 90px;
+    }
+    @media (max-width: 390px) {
+      gap: 20px;
+    }
+  }
+  &__step {
+    &:last-child::after {
+      display: none;
+    }
+    @media (min-width: 768px) and (max-width: 992px) {
+      &:nth-child(2)::after {
+        transform: rotate(150deg);
+        right: 0;
+        left: -102px;
+        bottom: -4px;
+        top: auto;
+      }
+    }
+  }
+}
+.step-plan {
+  text-align: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 25px;
+    right: -57%;
+    width: 175px;
+    height: 25px;
+    background: url(../img/arrow-card.svg) no-repeat center right;
+    @media (max-width: $maxWidthContainer + px) {
+      width: 120px;
+    }
+    @media (max-width: 992px) {
+      right: -20%;
+    }
+    @media (max-width: 768px) {
+      bottom: -36%;
+      width: 50px;
+      left: 46%;
+      transform: rotate(90deg);
+      top: auto;
+    }
+    @media (max-width: 576px) {
+      bottom: -40%;
+      left: 45%;
+    }
+    @media (max-width: 390px) {
+      display: none;
+    }
+  }
+  &__number {
+    width: 68px;
+    height: 68px;
+    background: #ffd234;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__text {
+  }
+}

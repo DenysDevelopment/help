@@ -56,4 +56,4 @@
 
   document.querySelectorAll('.tabs__btn')
     .forEach(tabEl => tabEl.addEventListener('click', tab))
-})()
+})();
