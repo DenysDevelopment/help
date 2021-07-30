@@ -1614,7 +1614,6 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .form-cost__input {
-  height: 32px;
   width: 264px;
   background: #f8f8f8;
   border: 1px solid #ffd234;
@@ -1624,46 +1623,51 @@ input[type=number]::-webkit-outer-spin-button {
           box-shadow: 0px 0px 5px 5px rgba(205, 202, 202, 0.17);
   display: block;
   outline: 0;
-  padding: 0 10px;
-  padding-top: 7px;
+  padding: 8px 10px;
 }
 
-.form-cost__input::-webkit-input-placeholder {
-  padding-top: -7px;
-}
-
-.form-cost__input::-moz-placeholder {
-  padding-top: -7px;
-}
-
-.form-cost__input:-ms-input-placeholder {
-  padding-top: -7px;
-}
-
-.form-cost__input::-ms-input-placeholder {
-  padding-top: -7px;
-}
-
-.form-cost__input::placeholder {
-  padding-top: -7px;
-}
-
-.form-cost__input::-moz-placeholder {
+.form-cost::-webkit-input-placeholder {
   font-family: PTSerif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
-  color: #b8b4b4;
 }
 
-.form-cost__input::placeholder,
-.form-cost__input::-moz-placeholder {
+.form-cost::-moz-placeholder {
   font-family: PTSerif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
+}
+
+.form-cost:-ms-input-placeholder {
+  font-family: PTSerif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.form-cost::-ms-input-placeholder {
+  font-family: PTSerif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.form-cost::placeholder {
+  font-family: PTSerif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.form-cost:-moz-input-placeholder,
+.form-cost:-webkit-input-placeholder {
   color: #b8b4b4;
 }
 
@@ -1770,7 +1774,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
-  color: #b8b4b4;
+  color: #1d1e20;
   margin-top: 3px;
 }
 
@@ -1968,6 +1972,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .choices__item {
   cursor: default;
+}
+
+.choices__item--choice {
+  color: #000;
 }
 
 .choices__item--selectable {
