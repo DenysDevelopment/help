@@ -1595,7 +1595,7 @@ body.lock {
 
 .form-cost__input {
   height: 32px;
-  width: 100%;
+  width: 264px;
   background: #f8f8f8;
   border: 1px solid #ffd234;
   -webkit-box-sizing: border-box;
@@ -1815,7 +1815,7 @@ body.lock {
 
 .choices__inner {
   height: 32px;
-  width: 100%;
+  width: 264px;
   background: #f8f8f8;
   border: 1px solid #ffd234;
   -webkit-box-sizing: border-box;
@@ -2691,6 +2691,14 @@ body.lock {
     overflow: hidden;
     -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
+  }
+
+  .form-cost__input {
+    width: 100%;
+  }
+
+  .choices__inner {
+    width: 100%;
   }
 
   .form-request__form {

@@ -82,7 +82,10 @@
   }
   &__input {
     height: 32px;
-    width: 100%;
+    width: 264px;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
     background: #f8f8f8;
     border: 1px solid #ffd234;
     box-sizing: border-box;
@@ -264,7 +267,10 @@
 
 .choices__inner {
   height: 32px;
-  width: 100%;
+  width: 264px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
   background: #f8f8f8;
   border: 1px solid #ffd234;
   box-sizing: border-box;
