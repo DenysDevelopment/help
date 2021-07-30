@@ -93,6 +93,10 @@
     display: block;
     outline: 0;
     padding: 0 10px;
+    padding-top: 7px;
+    &::placeholder {
+      padding-top: -7px;
+    }
     &::placeholder,
     &::-moz-placeholder {
       font-family: PTSerif;
@@ -101,9 +105,6 @@
       font-size: 12px;
       line-height: 16px;
       color: #b8b4b4;
-    }
-    &::-moz-placeholde {
-      margin-top: 5px;
     }
   }
   &__btn {

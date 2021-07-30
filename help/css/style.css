@@ -1203,7 +1203,6 @@ input[type=number]::-webkit-outer-spin-button {
 .tabs-info__tabs {
   position: relative;
   z-index: 2;
-  background: #fcfcfc;
   -webkit-box-shadow: 0px 0px 20px rgba(220, 220, 220, 0.6);
           box-shadow: 0px 0px 20px rgba(220, 220, 220, 0.6);
   border-radius: 28px;
@@ -1626,6 +1625,27 @@ input[type=number]::-webkit-outer-spin-button {
   display: block;
   outline: 0;
   padding: 0 10px;
+  padding-top: 7px;
+}
+
+.form-cost__input::-webkit-input-placeholder {
+  padding-top: -7px;
+}
+
+.form-cost__input::-moz-placeholder {
+  padding-top: -7px;
+}
+
+.form-cost__input:-ms-input-placeholder {
+  padding-top: -7px;
+}
+
+.form-cost__input::-ms-input-placeholder {
+  padding-top: -7px;
+}
+
+.form-cost__input::placeholder {
+  padding-top: -7px;
 }
 
 .form-cost__input::-moz-placeholder {
@@ -1645,10 +1665,6 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 12px;
   line-height: 16px;
   color: #b8b4b4;
-}
-
-.form-cost__input::-moz-placeholde {
-  margin-top: 5px;
 }
 
 .form-cost__btn {
@@ -2539,6 +2555,10 @@ input[type=number]::-webkit-outer-spin-button {
 @media (max-width: 962px) {
   .btn--big {
     padding: 1em 5em;
+  }
+
+  .tabs-info__tabs {
+    background: #fcfcfc;
   }
 
   .tabs-info__content {
