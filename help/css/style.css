@@ -765,6 +765,27 @@ body.lock {
   overflow: hidden;
 }
 
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=number]:hover,
+input[type=number]:focus {
+  -moz-appearance: number-input;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 @font-face {
   font-family: "PTSans";
   font-display: swap;
@@ -1175,7 +1196,7 @@ body.lock {
   right: 0;
   background: url(../img/decor-1.svg) no-repeat top right/cover;
   width: 100%;
-  height: 1979.5px;
+  min-height: 2600px;
   z-index: 1;
 }
 
@@ -1338,7 +1359,7 @@ body.lock {
   top: 0;
   background: url(../img/decor-1.svg) no-repeat top right/cover;
   width: 100%;
-  height: 1979.5px;
+  min-height: 2600px;
   z-index: 1;
 }
 
@@ -1607,15 +1628,6 @@ body.lock {
   padding: 0 10px;
 }
 
-.form-cost__input::-webkit-input-placeholder {
-  font-family: PTSerif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
-  color: #b8b4b4;
-}
-
 .form-cost__input::-moz-placeholder {
   font-family: PTSerif;
   font-style: normal;
@@ -1625,7 +1637,8 @@ body.lock {
   color: #b8b4b4;
 }
 
-.form-cost__input:-ms-input-placeholder {
+.form-cost__input::placeholder,
+.form-cost__input::-moz-placeholder {
   font-family: PTSerif;
   font-style: normal;
   font-weight: normal;
@@ -1634,22 +1647,8 @@ body.lock {
   color: #b8b4b4;
 }
 
-.form-cost__input::-ms-input-placeholder {
-  font-family: PTSerif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
-  color: #b8b4b4;
-}
-
-.form-cost__input::placeholder {
-  font-family: PTSerif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
-  color: #b8b4b4;
+.form-cost__input::-moz-placeholde {
+  margin-top: 5px;
 }
 
 .form-cost__btn {
@@ -1764,7 +1763,7 @@ body.lock {
   height: 0;
   width: 0;
   border-style: solid;
-  border-color: #333333 transparent transparent transparent;
+  border-color: #b8b4b4 transparent transparent transparent;
   border-width: 5px;
   position: absolute;
   right: 11.5px;
@@ -1774,7 +1773,7 @@ body.lock {
 }
 
 .choices[data-type*=select-one].is-open:after {
-  border-color: transparent transparent #333333 transparent;
+  border-color: transparent transparent #b8b4b4 transparent;
   margin-top: -7.5px;
 }
 
