@@ -7,6 +7,16 @@
   box-sizing: border-box;
 }
 
+a,
+button {
+  outline: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid red;
+}
+
 @import "_vars";
 //========================================================================================================================================================
 .container {
