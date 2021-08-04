@@ -1225,6 +1225,7 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .tabs-info__content {
@@ -2249,12 +2250,6 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 
-@media (min-width: 762px) {
-  .tabs-info__nav {
-    border-bottom: 1px solid #e0e0e0;
-  }
-}
-
 @media (min-width: 768px) {
   .menu__icon {
     display: none;
@@ -2794,10 +2789,6 @@ input[type=number]::-webkit-outer-spin-button {
   .tabs-info__nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .tabs-info__btn {
-    border-bottom: 1px solid #e0e0e0;
   }
 
   .info__body {
