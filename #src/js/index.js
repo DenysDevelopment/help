@@ -1,4 +1,5 @@
 @@include('../../node_modules/swiper/swiper-bundle.min.js')
+@@include('../../node_modules/choices.js/public/assets/scripts/choices.min.js')
 @@include('tabs.js')
 @@include('dynamic.js')
 @@include('sliders.js')
