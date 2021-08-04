@@ -744,6 +744,16 @@ button.swiper-pagination-bullet {
           box-sizing: border-box;
 }
 
+a,
+button {
+  outline: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid red;
+}
+
 .container {
   max-width: 1150px;
   margin: 0 auto;
@@ -1214,7 +1224,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 .tabs-info__nav {
   margin-bottom: 50px;
-  border-bottom: 1px solid #e0e0e0;
 }
 
 .tabs-info__btn {
@@ -1226,6 +1235,7 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .tabs-info__content {
